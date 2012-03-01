@@ -606,7 +606,7 @@ class LogHTML(object):
             links['Sauce Labs Job'] = 'http://saucelabs.com/jobs/%s' % report.session_id
 
         links_html = []
-        self.test_logs.append('<tr class="%s"><td class="%s">%s</td><td>%s</td><td>%s</td><td>%is</td>' % (result.lower(), result.lower(), result, testclass, testmethod, round(time)))
+        self.test_logs.append('<tr class="%s"><td class="%s">%s</td><td>%s</td><td>%s</td><td>%is</td></tr>' % (result.lower(), result.lower(), result, testclass, testmethod, round(time)))
         self.test_logs.append('<td>')
         for name, path in links.iteritems():
             links_html.append('<a href="%s">%s</a>' % (path, name))
