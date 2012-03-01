@@ -550,9 +550,9 @@ class LogHTML(object):
         self._debug_path = 'debug'
         self.config = config
         self.test_logs = []
-        self.errors = self.errors = 0
+        self.errors = 0
         self.passed = self.skipped = 0
-        self.failed = self.failed = 0
+        self.failed = 0
         self.xfailed = self.xpassed = 0
 
     def _debug_paths(self, testclass, testmethod):
